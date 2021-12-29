@@ -1,0 +1,137 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+// Variables
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+$transparentWhite: hsla(0, 0%, 100%, 0.75); //paragraphs
+$veryLightGray: hsl(0, 0%, 95%); //background, headings, buttons
+$bigShoudersDisplay: 'Big Shoulders Display', cursive; //title
+$lexendDeca: 'Lexend Deca', sans-serif; //content
+
+// Mixin
+@mixin mobile {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+// My Css
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: $lexendDeca;
+}
+
+body {
+    background: $veryLightGray;
+}
+
+h1,
+h2 {
+    font-family: $bigShoudersDisplay;
+    font-size: 40px;
+    color: $veryLightGray;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+p {
+    color: $transparentWhite;
+    line-height: 2;
+    margin-bottom: 100px;
+}
+
+img {
+    display: block;
+    width: 64px;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.wrap {
+    margin: 50px auto;
+    max-width: 945px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 30px;
+    @include mobile {
+        display: block;
+    }
+}
+
+.card {
+    padding: 50px;
+}
+
+.card:first-child {
+    border-radius: 12px 0 0 12px;
+    @include mobile {
+        border-radius: 12px 12px 0 0;
+    }
+}
+
+.card:last-child {
+    border-radius: 0 12px 12px 0;
+    @include mobile {
+        border-radius: 0 0 12px 12px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: $veryLightGray;
+    border-radius: 30px;
+    border: 2px solid $veryLightGray;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    &:hover {
+        background: transparent;
+    }
+}
+
+.brightOrange {
+    background: $brightOrange;
+    .btn {
+        color: $brightOrange;
+        &:hover {
+            color: $veryLightGray;
+        }
+    }
+}
+
+.darkCyan {
+    background: $darkCyan;
+    .btn {
+        color: $darkCyan;
+        &:hover {
+            color: $veryLightGray;
+        }
+    }
+}
+
+.veryDarkCyan {
+    background: $veryDarkCyan;
+    .btn {
+        color: $veryDarkCyan;
+        &:hover {
+            color: $veryLightGray;
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+        font-size: 11px;
+        color: hsl(228, 45%, 44%);
+    }
+}

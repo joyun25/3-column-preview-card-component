@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+h1,
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 2;
+  margin-bottom: 100px;
+}
+
+img {
+  display: block;
+  width: 64px;
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.wrap {
+  margin: 50px auto;
+  max-width: 945px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: block;
+  }
+}
+
+.card {
+  padding: 50px;
+}
+
+.card:first-child {
+  border-radius: 12px 0 0 12px;
+}
+
+@media (max-width: 375px) {
+  .card:first-child {
+    border-radius: 12px 12px 0 0;
+  }
+}
+
+.card:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+@media (max-width: 375px) {
+  .card:last-child {
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #f2f2f2;
+  border-radius: 30px;
+  border: 2px solid #f2f2f2;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.btn:hover {
+  background: transparent;
+}
+
+.brightOrange {
+  background: #e38826;
+}
+
+.brightOrange .btn {
+  color: #e38826;
+}
+
+.brightOrange .btn:hover {
+  color: #f2f2f2;
+}
+
+.darkCyan {
+  background: #006970;
+}
+
+.darkCyan .btn {
+  color: #006970;
+}
+
+.darkCyan .btn:hover {
+  color: #f2f2f2;
+}
+
+.veryDarkCyan {
+  background: #004241;
+}
+
+.veryDarkCyan .btn {
+  color: #004241;
+}
+
+.veryDarkCyan .btn:hover {
+  color: #f2f2f2;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  font-size: 11px;
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
