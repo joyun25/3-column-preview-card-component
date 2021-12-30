@@ -12,7 +12,7 @@ $lexendDeca: 'Lexend Deca', sans-serif; //content
 
 // Mixin
 @mixin mobile {
-    @media (max-width: 375px) {
+    @media (max-width: 700px) {
         @content;
     }
 }
