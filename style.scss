@@ -21,10 +21,10 @@ $lexendDeca: 'Lexend Deca', sans-serif; //content
 * {
     box-sizing: border-box;
     font-size: 15px;
-    font-family: $lexendDeca;
 }
 
 body {
+    font-family: $lexendDeca;
     background: $veryLightGray;
 }
 
